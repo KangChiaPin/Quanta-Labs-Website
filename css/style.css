@@ -8,37 +8,32 @@ html {
 	height: 100%;
 }
 
-.intro-section {
+head,
+.about-section,
+.services-section,
+.contact-section,
+.accr-section{
 	height: 100%;
 	padding-top: 150px;
 	text-align: center;
+}
+
+head{
 	background: #fff;
 }
 
 .about-section {
-	height: 100%;
-	padding-top: 150px;
-	text-align: center;
 	background: #eee;
 }
 
 .services-section {
-	height: 100%;
-	padding-top: 150px;
-	text-align: center;
 	background: #fff;
 }
 
 .contact-section {
-	height: 100%;
-	padding-top: 150px;
-	text-align: center;
 	background: #eee;
 }
 
 .accr-section {
-	height: 100%;
-	padding-top: 150px;
-	text-align: center;
 	background: #eee;
 }

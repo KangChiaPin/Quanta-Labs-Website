@@ -15,19 +15,19 @@ html {
 	padding: 0px;
 }
 
-head,
+header,
 .about-section,
 .services-section,
 .contact-section,
-.form-section,
-.accr-section{
-	height: ;
-	padding-top: 150px;
+.form-section
+.accr-section
+{
 	text-align: center;
 }
 
-head{
-	background: #fff;
+header{
+	height: 100%;
+	margin-top: -60px;
 }
 
 .about-section {
@@ -45,3 +45,18 @@ head{
 .accr-section {
 	background: #eee;
 }
+
+.btn-circle {
+	width: 70px;
+	height: 70px;
+	margin-top: 15px;
+	padding: 7px 16px;
+	border: 2px solid #fff;
+	border-radius: 35px;
+	font-size: 40px;
+	color: #fff;
+	background: 0 0;
+	-webkit-transition: background .3s ease-in-out;
+	-moz-transition: background .3s ease-in-out;
+	transition: background .3s ease-in-out;
+											}

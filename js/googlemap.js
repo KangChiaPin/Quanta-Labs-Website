@@ -32,7 +32,6 @@ function initialize() {
 		}
 	});
 
-	directionsDisplay.setMap(map);
 	directionsDisplay.setOptions( { suppressMarkers: true } );
 }
 
@@ -40,26 +39,33 @@ function placeMarker(position, map) {
 	start = new google.maps.Marker({
 		position: position,
 		  map: map,
-		  icon: 'img/little guy.jpg'
+		  icon: 'img/little guy.jpg',
+		  draggable: true
 	});
 	calcRoute(position);
+	directionsDisplay.setMap(map);
+
+	google.maps.event.addListener(start, 'dragend', function(e) {
+		calcRoute(e.latLng);
+		directionsDisplay.setMap(map);
+	});
 
 	google.maps.event.addListener(start, 'rightclick', function(e) {
 		start.setMap(null);
 		directionsDisplay.setMap(null);
 	});
 }
-	function calcRoute(start) {	
-		var request = {
-			origin:start,
+function calcRoute(start) {	
+	var request = {
+		origin:start,
 		destination:quanta,
 		travelMode: google.maps.TravelMode.DRIVING
-		};
-		directionsService.route(request, function(response, status) {
-			if (status == google.maps.DirectionsStatus.OK) {
-				directionsDisplay.setDirections(response);
-			}
-		});
-	}
+	};
+	directionsService.route(request, function(response, status) {
+		if (status == google.maps.DirectionsStatus.OK) {
+			directionsDisplay.setDirections(response);
+		}
+	});
+}
 
-	google.maps.event.addDomListener(window, 'load', initialize);
+google.maps.event.addDomListener(window, 'load', initialize);

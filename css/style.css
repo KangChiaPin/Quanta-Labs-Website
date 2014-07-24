@@ -8,12 +8,20 @@ html {
 	height: 100%;
 }
 
+#map-canvas {
+	height: 500px;
+	width: 800px;
+	margin: 0px auto;
+	padding: 0px;
+}
+
 head,
 .about-section,
 .services-section,
 .contact-section,
+.form-section,
 .accr-section{
-	height: 100%;
+	height: ;
 	padding-top: 150px;
 	text-align: center;
 }

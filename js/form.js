@@ -8,8 +8,8 @@ $(document).ready(function(){
 		var data = { Name: name, Email: email, Phone: phone, Msg: msg};
 
 
-		if(name ==''|| email==''|| phone==''|| msg==''){
-			alert("Insertion Failed Some Fields are Blank....!!");
+		if(!valid(name,email,phone,msg)){
+			alert("Insertion Failed!!");
 		}
 		else{
 			// Returns successful data submission message when the entered information is stored in database.
@@ -30,3 +30,14 @@ $(document).ready(function(){
 		}
 	});
 });
+
+function valid(name,email,phone,msg){
+	return test(/\b[A-Z.,_-]/,name) 
+		|| test(/\b[A-Z0-9._%+-]+@(?:[A-Z0-9-]+\.)+[A-Z]{2,4}\b/,email)
+		|| test(/\d{3}-\d{3}-\d{4}|\d{10}|\d{3}-\d{7}/,phone)
+		|| (name||email||phone||msg);
+}
+
+function test(regex,subject){
+	return regex.test(subject);
+}

@@ -15,15 +15,13 @@ $(document).ready(function(){
 			// Returns successful data submission message when the entered information is stored in database.
 			$.ajax({
 				type:"POST",
-				url:"form.pl",
+				url:"form.php",
 				data: data,
 				async: false
 			})
 			.done(function(data) {
-				alert("!");
-				console.log(data);
-				$('#form')[0].reset(); //To reset form fields
-				alert("1");
+				$('#contactForm')[0].reset(); //To reset form fields
+				$('form').html('<h2>Thank you!</h2>');
 			})
 			.fail(function() {
 			    alert( "error" );

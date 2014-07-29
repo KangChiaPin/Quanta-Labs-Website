@@ -18,7 +18,7 @@ body {
 }
 
 p {
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.75;
 }
 
@@ -171,13 +171,18 @@ fieldset[disabled] .btn-xl.active {
 /*navigation bar*/
 .navbar-default {
     border-color: transparent;
-    background-color: #222;
+    background-color: #b8b8b8;
 	box-shadow: 0 2px 3px rgba(0,0,0,0.24);
 }
 
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
     color: blue;
+}
+
+.navbar-brand img{
+	margin-top: -10px;
+	height: 40px;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -210,7 +215,7 @@ fieldset[disabled] .btn-xl.active {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    color: black;
+    color: #5f5f5f;
 }
 
 .navbar-default .nav li a:hover,
@@ -236,11 +241,12 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default {
         padding: 25px 0;
         border: 0;
-        background-color: transparent;
+        background-color: #eeeeee;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
-    }
+    	color:;
+	}
 
     .navbar-default .navbar-brand {
         font-size: 2em;
@@ -249,6 +255,11 @@ fieldset[disabled] .btn-xl.active {
         transition: all .3s;
     }
 
+
+.navbar-brand img{
+	margin-top: -20px;
+	height: 60px;
+}
     .navbar-default .navbar-nav>.active>a {
         border-radius: 3px;
     }
@@ -338,9 +349,10 @@ h2.section-heading  {
 section h3.section-subheading {
     text-transform: none;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-style: italic;
     font-weight: 400;
+	color: #777777;
 }
 
 @media(min-width:768px) {

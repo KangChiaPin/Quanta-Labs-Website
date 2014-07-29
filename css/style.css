@@ -8,11 +8,21 @@ html {
 	height: 100%;
 }
 
+#map {
+	padding: 100px 0;
+	background-color: #999999;
+}
+
 #map-canvas {
 	height: 500px;
-	width: 800px;
 	margin: 0px auto;
 	padding: 0px;
+}
+
+@media(device-width:568px){
+	#map-canvas{
+		height:100px;
+	}
 }
 
 header,
@@ -43,7 +53,7 @@ header{
 }
 
 .accr-section {
-	background: #eee;
+	background: #fff;
 }
 
 .btn-circle {
@@ -59,4 +69,24 @@ header{
 	-webkit-transition: background .3s ease-in-out;
 	-moz-transition: background .3s ease-in-out;
 	transition: background .3s ease-in-out;
-											}
+}
+
+	p.about-text{
+	font-size:20px;	
+}
+
+.our-mission{
+	text-align: center;
+	margin-top: 20px;
+	background-color: #ddd;
+	border-radius: 5px;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.img-center img{
+	display: block;
+	margin = 0 auto;
+}

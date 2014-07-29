@@ -5,8 +5,8 @@
  */
 
 body {
-    overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+   overflow-x: hidden;
+   font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .text-muted {
@@ -51,7 +51,6 @@ h3,
 h4,
 h5,
 h6 {
-    text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
@@ -68,6 +67,7 @@ h6 {
     background-color: #222;
 }
 
+/*botton*/
 .btn-primary {
     border-color: blue;
     text-transform: uppercase;
@@ -121,7 +121,6 @@ fieldset[disabled] .btn-primary.active {
     padding: 20px 40px;
     border-color: blue;
     border-radius: 3px;
-    text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -134,7 +133,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #f6bf01;
+    border-color: #0138f6;
     color: #fff;
     background-color: blue;
 }
@@ -169,6 +168,7 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fff;
 }
 
+/*navigation bar*/
 .navbar-default {
     border-color: transparent;
     background-color: #222;
@@ -230,6 +230,7 @@ fieldset[disabled] .btn-xl.active {
     background-color: blue;
 }
 
+/*screen adapting*/
 @media(min-width:768px) {
     .navbar-default {
         padding: 25px 0;
@@ -261,6 +262,7 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 
+/*header setting*/
 header {
     text-align: center;
     color: #fff;
@@ -275,11 +277,8 @@ header {
 }
 
 header .intro-text {
-    
-	
 	padding-top: 100px;
     padding-bottom: 50px;
-	
 }
 
 header .intro-text .intro-lead-in {
@@ -299,6 +298,7 @@ header .intro-text .intro-heading {
     line-height: 50px;
 }
 
+/*header screen resize*/
 @media(min-width:768px) {
 	header .intro-text {
         padding-top: 300px;
@@ -323,18 +323,18 @@ header .intro-text .intro-heading {
     }
 }
 
+/*section*/
 section {
     padding: 100px 0;
 }
 
-section h2.section-heading {
+h2.section-heading  {
     margin-top: 0;
     margin-bottom: 15px;
     font-size: 40px;
 }
 
 section h3.section-subheading {
-    margin-bottom: 75px;
     text-transform: none;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
@@ -353,6 +353,7 @@ section h3.section-subheading {
     text-transform: none;
 }
 
+/*portfolio part
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
@@ -424,12 +425,15 @@ section h3.section-subheading {
     z-index: 2;
 }
 
+
 @media(min-width:767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
     }
 }
+*/
 
+/*timeline
 .timeline {
     position: relative;
     padding: 0;
@@ -629,7 +633,9 @@ section h3.section-subheading {
         padding: 0 100px 20px 20px;
     }
 }
+*/
 
+/*team*/
 .team-member {
     margin-bottom: 50px;
     text-align: center;
@@ -654,11 +660,10 @@ aside.clients img {
     margin: 50px auto;
 }
 
+/*contact*/
 section#contact {
     background-color: #222;
-    background-image: url(../img/map-image.png);
     background-position: center;
-    background-repeat: no-repeat;
 }
 
 section#contact .section-heading {
@@ -678,6 +683,7 @@ section#contact .form-group input.form-control {
     height: auto;
 }
 
+/*fixed*/
 section#contact .form-group textarea.form-control {
     height: 236px;
 }
@@ -719,9 +725,11 @@ section#contact .text-danger {
     color: #e74c3c;
 }
 
+/*footer*/
 footer {
     padding: 25px 0;
     text-align: center;
+	background-color: #eeeeee;
 }
 
 footer span.copyright {
@@ -764,13 +772,14 @@ ul.social-buttons li a:active {
     background-color: blue;
 }
 
+/*btn*/
 .btn:focus,
 .btn:active,
 .btn.active,
 .btn:active:focus {
     outline: 0;
 }
-
+/*portfolio again
 .portfolio-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
@@ -841,16 +850,8 @@ ul.social-buttons li a:active {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
+*/
 
-::-moz-selection {
-    text-shadow: none;
-    background: blue;
-}
-
-::selection {
-    text-shadow: none;
-    background: blue;
-}
 
 img::selection {
     background: 0 0;

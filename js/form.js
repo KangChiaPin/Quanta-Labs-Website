@@ -32,11 +32,11 @@ $(document).ready(function(){
 });
 
 function valid(name,email,phone,msg){
-//	alert(test(/\b[A-Z.,_-]/,name) 
+/*	alert(test(/\b[A-Z.,_-]/,name) 
 		+"  "+ test(/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/,email)
 		+"  "+ test(/\d{3}-\d{3}-\d{4}|\d{10}|\d{3}-\d{7}/,phone)
 		+"  "+ (name&&email&&phone&&msg));
-
+*/
 	return  test(/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/,email)
 		&& test(/\d{3}-\d{3}-\d{4}|\d{10}|\d{3}-\d{7}/,phone)
 		&& (name&&email&&phone&&msg);

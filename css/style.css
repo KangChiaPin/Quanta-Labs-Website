@@ -3,6 +3,14 @@ body {
 	height: 100%;
 }
 
+ul{
+	list-style-type: none;
+	padding: 0;
+}
+
+a:hover{
+	text-decoration: none;
+}
 
 html {
 	width: 100%;
@@ -57,6 +65,23 @@ header{
 
 .accr-section {
 	background: #fff;
+}
+
+
+.ESS-section {
+	background-color: #f8f8f8;
+}
+
+.CHAMBER-section{
+	background-color: #f8f8f8;
+}
+
+.VIBRATION-section{
+	background-color: #f8f8f8;
+}
+
+.BATTERY-section{	
+	background-color: #f8f8f8;
 }
 
 .btn-circle {
@@ -135,6 +160,22 @@ header{
 	border: 5px solid; 
 }
 
+a.paper{
+	font-size: 10px;
+	color: black;
+}
+
+a.paper:hover{
+	font-size: 20px;
+}
+
+ul.footer-list{
+	line-height: 1.75; 
+}
+
+h5.footer-title {
+	color: #aaaaaa;
+}
+
 .img-container{
-	
 }

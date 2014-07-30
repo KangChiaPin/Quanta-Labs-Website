@@ -18,12 +18,12 @@ body {
 }
 
 p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.75;
 }
 
 p.large {
-    font-size: 16px;
+    font-size: 25px;
 }
 
 a,
@@ -35,7 +35,7 @@ a.active {
 }
 
 a {
-    color: blue;
+    color: black;
 }
 
 a:hover,
@@ -84,7 +84,7 @@ h6 {
 .open .dropdown-toggle.btn-primary {
     border-color: #f6bf01;
     color: #fff;
-    background-color: blue;
+    background-color: #f6bf01;
 }
 
 .btn-primary:active,
@@ -118,7 +118,7 @@ fieldset[disabled] .btn-primary.active {
 }
 
 .btn-xl {
-    padding: 20px 40px;
+    padding: 10px 40px;
     border-color: blue;
     border-radius: 3px;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;

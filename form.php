@@ -6,6 +6,7 @@ $Name = Trim(stripslashes($_POST['Name']));
 $Phone = Trim(stripslashes($_POST['Phone'])); 
 $Email = Trim(stripslashes($_POST['Email'])); 
 $Message = Trim(stripslashes($_POST['Msg'])); 
+$FromUS = Trim(stripslashes($_POST['FromUS'])); 
 $EmailFrom = $Email;
 
 
@@ -30,6 +31,9 @@ $Body .= $Email;
 $Body .= "\n";
 $Body .= "Message: ";
 $Body .= $Message;
+$Body .= "\n";
+$Body .= "FromUS: ";
+$Body .= $FromUS;
 $Body .= "\n";
 
 // send email 

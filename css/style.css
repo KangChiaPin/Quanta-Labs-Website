@@ -17,6 +17,10 @@ html {
 	height: 100%;
 }
 
+li.contact{
+	
+}
+
 #map {
 	padding: 150px 0;
 	background-color: #999999;
@@ -25,8 +29,19 @@ html {
 	-webkit-transform: translateZ(0px);
 }
 
+.toggle-map{
+}
+
+#map-container{
+	display: none;
+}
+
+.phone-area{
+	margin-top: 30px;
+}
+
 #map-canvas {
-	height: 500px;
+	height: 450px;
 	margin: 0px auto;
 	padding: 0px;
 }
@@ -65,8 +80,12 @@ header{
 
 .accr-section {
 	background: #fff;
+	padding: 10px;
 }
 
+.phone{
+	height: 100%;
+}
 
 .ESS-section {
 	background-color: #f8f8f8;
@@ -161,12 +180,12 @@ header{
 }
 
 a.paper{
-	font-size: 10px;
+	font-size: 15px;
 	color: black;
 }
 
 a.paper:hover{
-	font-size: 20px;
+	font-size: 25px;
 }
 
 ul.footer-list{
@@ -175,6 +194,33 @@ ul.footer-list{
 
 h5.footer-title {
 	color: #aaaaaa;
+}
+
+.bulletin{
+	padding-top:40px;
+}
+
+.checkbox-input{
+	color: white;
+	font-size: 20px;
+}
+
+input.has-error{
+	background-color: #FFC1C1;
+}
+
+textarea.has-error{
+	background-color: #FFC1C1;
+}
+
+p.phone-number{
+	color: white;
+	font-size: 40px;
+}
+
+img.certificate{
+	padding: 5px;
+	height: 100px;
 }
 
 .img-container{

@@ -114,41 +114,51 @@ var style2 = [{
                 "weight": 1.2
             }]
         }];
+$(".toggle-map").click(function(){
+	if($("#map-container").is(":hidden")){
+		$("#map-container").slideDown( "slow" ,function initialize() {
+			directionsDisplay = new google.maps.DirectionsRenderer();
+			var mapOptions = {
+				zoom: 11,
+				center: quanta,
+				mapTypeId: google.maps.MapTypeId.ROADMAP,
+				//styles: style,
+				//disableDefaultUI: true,
+		        scrollwheel: false,
+		        draggable: false
+			};
+		
+			map = new google.maps.Map(document.getElementById('map-canvas'),
+					mapOptions);
+		
+			var image = 'img/map_logo.png';
+			var beachMarker = new google.maps.Marker({
+				position: quanta,
+				map: map,
+				icon: image
+			});
+		
+		
+			google.maps.event.addListener(map, 'click', function(e) {
+				if(start){
+					start.setMap(null);
+					placeMarker(e.latLng, map);
+				} else{
+					placeMarker(e.latLng, map);
+				}
+			});
+		
+			directionsDisplay.setOptions( { suppressMarkers: true } );
+			
+			
+		});
+		
+		$("html, body").animate({ scrollTop: $(document).height() }, "slow");
+	} else{
+		$("#map-container").slideUp();
+	}
+});
 
-function initialize() {
-	directionsDisplay = new google.maps.DirectionsRenderer();
-	var mapOptions = {
-		zoom: 11,
-		center: quanta,
-		mapTypeId: google.maps.MapTypeId.ROADMAP,
-		styles: style2,
-		disableDefaultUI: true,
-        scrollwheel: false,
-        draggable: false
-	};
-
-	map = new google.maps.Map(document.getElementById('map-canvas'),
-			mapOptions);
-
-	var image = 'img/map_logo.png';
-	var beachMarker = new google.maps.Marker({
-		position: quanta,
-		map: map,
-		icon: image
-	});
-
-
-	google.maps.event.addListener(map, 'click', function(e) {
-		if(start){
-			start.setMap(null);
-			placeMarker(e.latLng, map);
-		} else{
-			placeMarker(e.latLng, map);
-		}
-	});
-
-	directionsDisplay.setOptions( { suppressMarkers: true } );
-}
 
 function placeMarker(position, map) {
 	start = new google.maps.Marker({
@@ -185,4 +195,4 @@ function calcRoute(start) {
 	});
 }
 
-google.maps.event.addDomListener(window, 'load', initialize);
+//google.maps.event.addDomListener(window, 'load', initialize);

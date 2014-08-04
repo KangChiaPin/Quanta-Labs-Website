@@ -1,4 +1,4 @@
-var quanta = new google.maps.LatLng(37.382434,-121.939316);
+var quanta = new google.maps.LatLng(37.3819142,-121.9405774);
 var map;
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
@@ -124,8 +124,8 @@ $(".toggle-map").click(function(){
 				mapTypeId: google.maps.MapTypeId.ROADMAP,
 				//styles: style,
 				//disableDefaultUI: true,
-		        scrollwheel: false,
-		        draggable: false
+		        //scrollwheel: false,
+		        //draggable: false
 			};
 		
 			map = new google.maps.Map(document.getElementById('map-canvas'),

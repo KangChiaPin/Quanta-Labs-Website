@@ -39,25 +39,10 @@ function valid(name,email,phone,msg,fromUS){
 		+"  "+ test(/\d{3}-\d{3}-\d{4}|\d{10}|\d{3}-\d{7}/,phone)
 		+"  "+ (name&&email&&phone&&msg));
 */
-	$("#email").removeClass("has-error");
-	$("#phone").removeClass("has-error");
-	$("#name").removeClass("has-error");
-	$("#message").removeClass("has-error");
-
-	if(!name){
-		$("#name").addClass("has-error");
-	}
-	
-	if(!msg){
-		$("#message").addClass("has-error");
-	}
-	
-	if(!test(/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/,email)){
-		$("#email").addClass("has-error");
+		if(!test(/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/,email)){
 	}
 	
 	if(!test(/\d{3}-\d{3}-\d{4}|\d{10}|\d{3}-\d{7}|\(\d{3}\)\d{7}/,phone) && fromUS){
-		$("#phone").addClass("has-error");
 	}
 	
 	if(fromUS){

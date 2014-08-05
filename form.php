@@ -6,7 +6,6 @@ $Name = Trim(stripslashes($_POST['Name']));
 $Phone = Trim(stripslashes($_POST['Phone'])); 
 $Email = Trim(stripslashes($_POST['Email'])); 
 $Message = Trim(stripslashes($_POST['Msg'])); 
-$FromUS = Trim(stripslashes($_POST['FromUS'])); 
 $EmailFrom = $Email;
 
 

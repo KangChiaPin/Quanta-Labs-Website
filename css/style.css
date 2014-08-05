@@ -168,7 +168,7 @@ header{
 	background-color: rgba(0,0,0,0.6);
 	display: none;
 	width: 100%;
-	height: 100%;:
+	height: 100%;
 	top: 0;
 	left: 0;
 }
@@ -229,5 +229,9 @@ img.certificate{
 
 .img-container{
 	position: relative;
+}
+
+.service-nav{
+	font-size: 13px;
 }
 

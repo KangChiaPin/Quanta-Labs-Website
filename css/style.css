@@ -32,10 +32,6 @@ li.contact{
 	-webkit-transform: translateZ(0px);
 }
 
-.phone-area{
-	margin-top: 30px;
-}
-
 #map-canvas {
 	height: 450px;
 	margin: 0px auto;

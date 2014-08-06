@@ -164,7 +164,7 @@ function placeMarker(position, map) {
 	start = new google.maps.Marker({
 		position: position,
 		  map: map,
-		  icon: 'img/little guy.jpg',
+		  icon: 'img/littleguy.png',
 		  draggable: true
 	});
 	calcRoute(position);

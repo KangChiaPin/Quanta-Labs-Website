@@ -134,6 +134,9 @@ header{
 	padding: 0 20px;
 	background-color: white;
 }
+.compress img{
+	margin: 0 auto;
+}
 
 @media(max-width:568px){
 
@@ -211,13 +214,17 @@ textarea.has-error{
 	background-color: #FFC1C1;
 }
 
+.phone{
+	margin-right: 0;
+}
+
 p.phone-number{
-	color: white;
-	font-size: 40px;
+	font-size: 20px;
+	padding: 5px;
 }
 @media(max-width:769px){
 	p.phone-number{
-		font-size: 30px;
+		font-size: 10px;
 		color: white;
 	}
 }
@@ -232,6 +239,15 @@ img.certificate{
 }
 
 .service-nav{
-	font-size: 13px;
+	font-size: 10px;
+	margin-top: 7px;
 }
 
+.underline{
+	border-bottom: 1px;
+	border: black;
+}
+
+.resize>img{
+	margin:100px;
+}

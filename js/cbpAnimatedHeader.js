@@ -28,9 +28,13 @@ var cbpAnimatedHeader = (function() {
 		var sy = scrollY();
 		if ( sy >= changeHeaderOn ) {
 			classie.add( header, 'navbar-shrink' );
+			$(".service-nav>li>a").css("padding-bottom","5px");
+			$(".service-nav>li>a").css("padding-top","5px");
 		}
 		else {
 			classie.remove( header, 'navbar-shrink' );
+			$(".service-nav>li>a").css("padding-bottom","15px");
+			$(".service-nav>li>a").css("padding-top","15px");
 		}
 		didScroll = false;
 	}

@@ -215,6 +215,7 @@ textarea.has-error{
 }
 
 p.phone-number{
+	color: white;
 	font-size: 20px;
 	padding: 5px;
 }
@@ -258,4 +259,12 @@ a.googleplus-btn{
 
 a.linkedin-btn{
 	background-color: #007bb6;
+}
+
+.nav-home{
+	font-size: 20px;
+}
+
+.nav-service{
+	font-size: 13px;
 }

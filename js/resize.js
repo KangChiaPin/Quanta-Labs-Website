@@ -1,6 +1,6 @@
 var width = $(window).width();
 
-if(width>769){
+if(width>769 && !navigator.userAgent.match(/iPad/i)){
 	$(".img-container").mouseenter(function(){
 		  $(this).find(".hover").fadeIn("200");
 	});

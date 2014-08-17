@@ -236,8 +236,8 @@ img.certificate{
 }
 
 .service-nav{
-	font-size: 13px;
-	margin-top: 9px;
+	font-size: 10px;
+	margin-top: 7px;
 }
 
 .underline{
@@ -248,6 +248,7 @@ img.certificate{
 .resize>img{
 	margin:100px;
 }
+<<<<<<< HEAD
 
 a.facebook-btn{
 	background-color: #3b5998;
@@ -268,3 +269,5 @@ a.linkedin-btn{
 .nav-service{
 	font-size: 13px;
 }
+=======
+>>>>>>> parent of 97fba51... add pics

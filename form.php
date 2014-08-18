@@ -2,10 +2,10 @@
 
 $EmailTo = "billy5521@gmail.com";
 $Subject = "something";
-$Name = Trim(stripslashes($_POST['Name'])); 
-$Phone = Trim(stripslashes($_POST['Phone'])); 
-$Email = Trim(stripslashes($_POST['Email'])); 
-$Message = Trim(stripslashes($_POST['Msg'])); 
+$Name = Trim(stripslashes($_POST['name'])); 
+$Phone = Trim(stripslashes($_POST['phone'])); 
+$Email = Trim(stripslashes($_POST['email'])); 
+$Message = Trim(stripslashes($_POST['message'])); 
 $EmailFrom = $Email;
 
 

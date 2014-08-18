@@ -1,17 +1,13 @@
-<<<<<<< HEAD:js/resize.js
 var width = $(window).width();
 
 if(width>769 && !navigator.userAgent.match(/iPad/i)){
 	$(".img-container").mouseenter(function(){
 		  $(this).find(".hover").fadeIn("200");
-=======
-$(".img-container").mouseenter(function(){
-	  $(this).find(".hover").fadeIn("200");
->>>>>>> parent of 97fba51... add pics:js/animation.js
 	});
 	$(".img-container").mouseleave(function(){
 	  $(this).find(".hover").fadeOut("200");
 	});
+}
 	
 var width = $(window).width();
 

@@ -98,13 +98,13 @@ header{
 .btn-circle {
 	width: 70px;
 	height: 70px;
-	margin-top: 15px;
+	margin-top: 250px;
 	padding: 7px 16px;
-	border: 2px solid #fff;
 	border-radius: 35px;
 	font-size: 40px;
 	color: #fff;
 	background: 0 0;
+	background-color: rgba(0, 0, 0, 0.3);
 	-webkit-transition: background .3s ease-in-out;
 	-moz-transition: background .3s ease-in-out;
 	transition: background .3s ease-in-out;
@@ -248,10 +248,12 @@ img.certificate{
 .resize>img{
 	margin:100px;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> FETCH_HEAD
+
+a.facebook-btn,
+a.googleplus-btn,
+a.linkedin-btn{
+	margin-top: 10px;
+}
 
 a.facebook-btn{
 	background-color: #3b5998;
@@ -271,10 +273,4 @@ a.linkedin-btn{
 
 .nav-service{
 	font-size: 13px;
-<<<<<<< HEAD
 }
-=======
-}
-=======
->>>>>>> parent of 97fba51... add pics
->>>>>>> FETCH_HEAD

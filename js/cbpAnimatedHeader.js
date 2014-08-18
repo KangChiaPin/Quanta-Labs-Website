@@ -28,18 +28,13 @@ var cbpAnimatedHeader = (function() {
 		var sy = scrollY();
 		if ( sy >= changeHeaderOn ) {
 			classie.add( header, 'navbar-shrink' );
-<<<<<<< HEAD
 			classie.add( '.service-nav', 'navbar-shrink' );
 		}
 		else {
 			classie.remove( header, 'navbar-shrink' );
 			classie.add( '.service-nav', 'navbar-shrink' );
-=======
 		}
-		else {
-			classie.remove( header, 'navbar-shrink' );
->>>>>>> parent of 97fba51... add pics
-		}
+		
 		didScroll = false;
 	}
 
